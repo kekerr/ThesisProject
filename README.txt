@@ -1,0 +1,7 @@
+Math and Engineering Thesis Project
+
+Design of Region Merging Algorithm for Segmentation of Noisy Images
+By: Darcie Dillion, Katharine Kerr and Sungbok Lee
+
+Abstract
+The region merging technique is a method for implementing image segmentation. Two image models were implemented to evaluate the merging criterion as discussed by Felipe Calderero and Ferran Marques in “Region Merging Techniques Using Information Theory Statistical Measures”. The two image models are the i.i.d. model and the Markov process model. These two image models allow us to mathematically analyze an image and hence implement a region merging algorithm. The merging algorithm is evaluated both quali- tatively, by observing the segmented image, and quantitatively by calculating the PSNR value between the initial and merged images. Two different types of image noise, salt and pepper and additive white Gaussian noise, were applied to images to assess the robustness of our merging algorithm. The results demonstrated that without noise, the Markov model performed superiorly to the i.i.d. model for meaningful image segmentation. In addition, the algorithm was fairly robust to salt and pepper noise for both image models, where the application of a median filter improved results. If additional number of filters were applied, the image became under-segmented. For additive white Gaussian noise, the i.i.d. model performed significantly worse than the Markov model; however, the i.i.d. results were improved through the use of median filters and the Markov case was not.

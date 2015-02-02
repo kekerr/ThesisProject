@@ -1,0 +1,36 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf360
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f0\fs24 \cf0 MATLAB READ ME\
+\
+Open imquantnoise.m file and change appropriate values to match file name.\
+Change quantizer value.\
+\
+To add noise and filter:\
+Change only noise = 1 to add salt and pepper noise noise to the image, filter = 1 to apply one median filter to the salt and pepper noisy image. \
+Change d value to change noise intensity of the image\
+Change m and n values to change size of box of median filter\
+\
+Change noise = 1 and gaussian = 1 to add additive white gaussian noise to the image, filter = 1 to apply one median filter to the salt and pepper noisy image.\
+Change variance value to change noise intensity of the image.\
+Change m and n values to change size of box of median filter\
+\
+Run the script imquantnoise.m\
+\
+Pixel values will be saved as a matrix in a .txt file that is tab delimited. This file will be read by the C program, and must be moved to the C file folder.\
+\
+When C program has merged the image, the .txt file must be moved to the MATLAB file folder.\
+\
+Change the name of the file in the fileIn.m script\
+Run fileIn.m script.\
+\
+All image files must be in the same MATLAB workspace.\
+\
+FILES\
+imquantnoise.m: quantizes an image into a specific number of bins, adds noise/filter to an image when specified.\
+quantize.m: Finds output levels for uniform quantizer\
+fileOut.m: Writes pixel matrix values of the quantized image to a file\
+fileIn.m: Reads matrix created by C program and displays the merged image}
